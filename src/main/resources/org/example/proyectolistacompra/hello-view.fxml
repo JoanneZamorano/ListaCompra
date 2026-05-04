@@ -17,11 +17,15 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="lblTotal" text="Total Productos: 0" textFill="#5ea8d3" />
+      <Label fx:id="lblTotal" text="Total Productos: 0" textFill="#2b6f97">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
       <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
             <TextField fx:id="txtProducto" prefWidth="250.0" promptText="Introduce un producto...." />
-            <Button fx:id="btnAñadir" mnemonicParsing="false" onAction="#onAñadirClick" text="+">
+            <Button fx:id="btnAñadir" defaultButton="true" mnemonicParsing="false" onAction="#onAñadirClick" text="+">
                <HBox.margin>
                   <Insets left="10.0" />
                </HBox.margin>

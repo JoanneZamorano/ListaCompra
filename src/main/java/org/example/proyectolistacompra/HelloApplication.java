@@ -14,6 +14,7 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 400, 500);
         stage.setTitle("APP: Lista de la compra!");
         stage.setScene(scene);
+        //Carga el archivo de estilos CSS:
         scene.getStylesheets().add(getClass().getResource("estilos.css").toExternalForm());
         stage.show();
     }

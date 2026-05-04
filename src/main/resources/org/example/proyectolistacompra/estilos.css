@@ -1,3 +1,4 @@
+/*BOTONES*/
 .button {
     -fx-background-radius: 20;
     -fx-cursor: hand;
@@ -9,18 +10,13 @@
     -fx-font-weight: bold;
 }
 
-/* Clase para cuando el producto esté comprado */
-.producto-comprado {
-    -fx-text-fill: #a0a0a0;
-    -fx-strikethrough: true;
-}
-
 #btnVaciar {
     -fx-background-color: #ff5252;
     -fx-text-fill: white;
 }
 
-
-.list-cell:filled:selected {
-    -fx-background-color: #e0f7fa;
+/* clase-> producto esté comprado */
+.producto-comprado {
+    -fx-text-fill: #a0a0a0;
+    -fx-strikethrough: true;
 }
