@@ -35,4 +35,10 @@ public class Producto {
     public void setComprado(boolean comprado) {
         this.comprado.set(comprado);
     }
+
+    @Override
+    public String toString() {
+        return getNombre();
+    }
 }
+
