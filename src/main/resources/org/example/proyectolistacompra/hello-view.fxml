@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
@@ -16,13 +17,25 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <Label fx:id="lblTotal" text="Total Productos: 0" textFill="#5ea8d3" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <TextField fx:id="txtProducto" />
-            <Button fx:id="btnAñadir" mnemonicParsing="false" onAction="#onAñadirClick" text="+" />
+            <TextField fx:id="txtProducto" prefWidth="250.0" promptText="Introduce un producto...." />
+            <Button fx:id="btnAñadir" mnemonicParsing="false" onAction="#onAñadirClick" text="+">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
          </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
       </HBox>
       <ListView fx:id="listViewProductos" prefHeight="200.0" prefWidth="200.0" />
-      <Button fx:id="btnVaciar" mnemonicParsing="false" onAction="#onVaciarClick" text="Eliminar toda la lista" />
+      <Button fx:id="btnVaciar" mnemonicParsing="false" onAction="#onVaciarClick" text="Eliminar toda la lista">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Button>
    </children>
 </VBox>
